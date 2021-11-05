@@ -23,6 +23,8 @@ export class AppComponent implements OnInit {
 
   private _toDo: Partial<ToDo>;
 
+  data: true;
+
   constructor(private store: Store<State>) {}
 
   ngOnInit(): void {
