@@ -1,10 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AppComponent } from './app.component';
+import { generateToDos, ToDo } from './state/todo/todo.model';
 
 describe('AppComponent', () => {
   let component: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
+  let _toDo: Partial<ToDo>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -18,11 +19,5 @@ describe('AppComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should', () => {
-    expect(component).toBeTruthy();
-  });
-
-  // it('should', async(() => {
-  //   spyOn(component, 'initialize')
-  // }));
+  it('should run something');
 });
