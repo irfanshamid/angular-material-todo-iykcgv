@@ -19,5 +19,11 @@ describe('AppComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should run something');
+  it('should test selected', () => {
+    el = fixture.debugElement.query(By.css('li')).nativeElement;
+    expect(el.classList.has('selected')).toBe(false);
+
+    comp.onSelect(heroes[0]);
+    expect(el.classList.has('selected')).toBe(true);
+});
 });
